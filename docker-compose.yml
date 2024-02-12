@@ -1,0 +1,17 @@
+# docker-composeで使用するバージョンを定義
+version: '3.9'
+
+# サービス(コンテナ)の定義
+services:
+# DBの定義
+    mysqldb:
+     image: mysql:8
+     container_name: mysql
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: libro_db
+       MYSQL_USER: docker
+       MYSQL_PASSWORD: docker
+       TZ: 'Asia/Tokyo'
+     ports:
+       - "3306:3306"
