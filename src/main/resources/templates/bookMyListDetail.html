@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>本の詳細</title>
-    <link rel="stylesheet" href="../static/css/bookDetail.css">
+    <link rel="stylesheet" href="../static/css/bookMyListDetail.css">
 </head>
 
 <body>
 
     <iframe src="header.html" frameborder="0" scrolling="no" width="100%" height="88px"></iframe>
+    <div class="register-cancellation">           
+   		<button type="button" class="back-button">戻る</button>
+        <button type="button" class="cancellation-list">マイリストから削除</button>
+    </div>
     <main class="book-detail-container">
         <div class="book-cover-container">
             <img src="../static/img/ai.jpg" alt="ファンタジーのブックカバー" class="book-cover">
@@ -47,6 +51,7 @@
                 <textarea class="review-text" placeholder="レビューを書く..."></textarea>
                 <button type="submit" class="submit-review">レビューを送信</button>
             </div>
+            
         </div>
     </main>
 
