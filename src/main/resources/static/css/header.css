@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.header-iframe {
+    width: 100%;
+    /* ページの幅いっぱいに広げる */
+    height: 150px;
+    /* 高さを指定 */
+    border: none;
+    /* 枠線を非表示にする */
+    margin: 0;
+    /* マージンを取り除く */
+    padding: 0;
+    /* パディングを取り除く */
+    display: block;
+    /* ブロックレベル要素として表示し、周囲のスペースを排除 */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+input[type="search"] {
+    padding: 5px;
+}
