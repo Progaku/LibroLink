@@ -10,7 +10,7 @@ body {
 .book-detail-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 .book-cover-container {
@@ -60,8 +60,15 @@ body {
     border-radius: 4px;
 }
 
-.save-reading-status {
-    padding: 5px 10px;
+.register {
+    position: fixed; /* 要素を画面に固定 */
+    right: 10%; /* 右から20%の位置 */
+    top: 130px; /* 上から20pxの位置に設定 */
+    z-index: 1000; /* 他の要素の上に表示 */
+}
+
+.register-list {
+    padding: 10px 20px;
     background-color: #0084ff;
     color: white;
     border: none;
@@ -70,8 +77,19 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.save-reading-status:hover {
+.register-list:hover {
     background-color: #0056b3;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #dad7cd;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	margin-right: 20px;
 }
 
 .book-review {
