@@ -1,0 +1,137 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.book-detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.book-cover-container {
+    margin-right: 100px;
+    /* 表紙とメタデータの間隔 */
+}
+
+.book-cover {
+    width: 350px;
+    /* 表紙の幅 */
+    height: 550px;
+    /* 表紙の高さ */
+    object-fit: cover;
+    /* 表紙のアスペクト比を保つ */
+    margin-top: 30px;
+}
+
+.book-metadata-container {
+    max-width: 600px;
+    /* メタデータの最大幅 */
+}
+
+.book-title,
+.book-author,
+.book-publisher,
+.book-synopsis {
+    margin-bottom: 10px;
+}
+
+.reading-status {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reading-status label {
+    margin-right: 10px;
+    /* チェックボックスとテキストボックスの間隔 */
+}
+
+.page-number {
+    margin-right: 10px;
+    /* テキストボックスと保存ボタンの間隔 */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.save-reading-status {
+    padding: 5px 10px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-reading-status:hover {
+    background-color: #0056b3;
+}
+
+.book-review {
+    margin-top: 20px;
+}
+
+.review-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    direction: rtl;
+    /* 星を右から左へ並べる */
+    font-size: 24px;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+    /* ラジオボタンを画面から隠す */
+}
+
+.star-rating label {
+    color: #ccc;
+    /* 星のデフォルトの色 */
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked~label {
+    color: #f5a623;
+    /* 星をホバーまたは選択したときの色 */
+}
+
+.review-text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 100px;
+    /* テキストエリアの最小の高さ */
+    resize: vertical;
+    /* 縦方向のリサイズのみ可能にする */
+}
+
+.submit-review {
+    padding: 10px 20px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-review:hover {
+    background-color: #0056b3;
+}
+
+/* ここに追加でスタイルを定義 */
