@@ -1,0 +1,253 @@
+/* styles.css */
+html {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+input[type="search"] {
+    padding: 5px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* styles.css の該当部分のみ表示 */
+.book-shelves {
+    display: flex;
+    justify-content: space-around;
+    /* 中央揃えから等間隔に変更 */
+    margin-top: 20px;
+}
+
+.book-item {
+    text-align: center;
+    /* 画像とテキストを中央揃えにする */
+    flex-basis: 40%;
+    /* 画像の幅を指定 */
+}
+
+.book-item img {
+    width: 100%;
+    /* コンテナに合わせて画像がリサイズされるように */
+    height: auto;
+    margin-bottom: 10px;
+    /* リンクとの間隔 */
+}
+
+.book-item a {
+    display: block;
+    /* リンクがブロックレベル要素として振る舞うように */
+    color: #000;
+    /* リンクの色 */
+    text-decoration: none;
+    /* 下線を消す */
+    padding: 5px;
+    /* クリックしやすいようにパディングを追加 */
+    border: 1px solid #ccc;
+    /* 枠線を追加 */
+    border-radius: 5px;
+    /* 角を丸める */
+    background-color: #f8f8f8;
+    /* 背景色を追加 */
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+/* styles.css の該当部分のみ表示 */
+.news {
+    display: flex;
+    justify-content: center;
+    /* センタリングのためにflexboxを使用 */
+    margin-top: 50px;
+}
+
+.news-container {
+    width: 60%;
+    /* ニュースコンテナの幅を指定 */
+    background: #f9f9f9;
+    /* 背景色を薄いグレーに設定 */
+    padding: 20px;
+    /* パディングを追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 影を追加 */
+    border-radius: 8px;
+    /* 角を丸める */
+    margin-bottom: 20px;
+    /* 下部の余白を追加 */
+}
+
+
+.news h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* タイトルとリストの間隔を設定 */
+    text-align: center;
+    /* タイトルを中央揃えに */
+}
+
+.news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    /* ここでリストの最大高さを設定 */
+    overflow-y: auto;
+    /* 縦方向のスクロールを可能に */
+}
+
+.news ul li {
+    background: white;
+    /* リストアイテムの背景色 */
+    margin-bottom: 5px;
+    /* リストアイテム間のマージン */
+    padding: 10px;
+    /* リストアイテムのパディング */
+    border-radius: 4px;
+    /* リストアイテムの角を丸める */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* リストアイテムの影 */
+}
+
+.progress-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.progress-circle {
+    width: 250px;
+    height: 250px;
+    background-color: #e6e6e6;
+    /* 灰色背景 */
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: #4CAF50;
+    /* 進捗色（緑色） */
+    width: 100%;
+    /* 円全体の幅 */
+    height: 0%;
+    /* 開始時点では高さ0 */
+    position: absolute;
+    bottom: 0;
+    /* 下から始まる */
+    transition: height 2s ease-in-out;
+    /* アニメーション効果 */
+}
+
+/* JavaScriptでデータ属性に基づいて動的に変更する */
+.progress-circle[data-progress="30"] .progress-fill {
+    height: 30%;
+    /* 30%の進捗 */
+}
+
+.progress-circle[data-progress="70"] .progress-fill {
+    height: 70%;
+    /* 70%の進捗 */
+}
+
+.progress-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 円の中心に合わせる */
+    transform: translate(-50%, -50%);
+    /* X軸とY軸の両方で中心からオフセットする */
+    text-align: center;
+    z-index: 2;
+    width: 100px;
+    /* コンテナの幅 */
+    height: 100px;
+    /* コンテナの高さ */
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    /* Flexboxを使って中央揃えを実現 */
+    flex-direction: column;
+    /* 子要素を縦方向に配置 */
+    justify-content: center;
+    /* 子要素を縦方向の中央に配置 */
+    align-items: center;
+    /* 子要素を横方向の中央に配置 */
+}
+
+.progress-text-contain {
+    margin: auto;
+}
+
+.progress-percent {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>本の詳細</title>
+    <link rel="stylesheet" href="../static/css/bookMyListDetail.css">
+</head>
+
+<body>
+
+    <iframe src="header.html" frameborder="0" scrolling="no" width="100%" height="88px"></iframe>
+    <div class="register-cancellation">           
+   		<button type="button" class="back-button">戻る</button>
+        <button type="button" class="cancellation-list">マイリストから削除</button>
+    </div>
+    <main class="book-detail-container">
+        <div class="book-cover-container">
+            <img src="../static/img/ai.jpg" alt="ファンタジーのブックカバー" class="book-cover">
+        </div>
+        <div class="book-metadata-container">
+            <h1 class="book-title">推しの子 1巻</h1>
+            <p class="book-author">著者: 赤坂アカ</p>
+            <p class="book-publisher">出版社: 集英社</p>
+            <p class="book-synopsis">あらすじ: 「この芸能界（せかい）において嘘は武器だ」 地方都市で働く産婦人科医・ゴロー。 ある日"推し"のアイドル「B小町」のアイが彼の前に現れた。
+                彼女はある禁断の秘密を抱えており…。 そんな二人の"最悪"の出会いから、運命が動き出していく―。
+            </p>
+
+            <div class="reading-status">
+                <label for="completed-reading">
+                    <input type="checkbox" id="completed-reading" name="completed_reading">
+                    読了
+                </label>
+                <input type="text" id="page-number" name="page_number" placeholder="ページ数" class="page-number">
+                <button type="button" class="save-reading-status">保存</button>
+            </div>
+
+            <div class="book-review">
+                <h2 class="review-title">レビューを書く</h2>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
+                        title="5 stars">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                        title="4 stars">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                        title="3 stars">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                        title="2 stars">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+                </div>
+                <textarea class="review-text" placeholder="レビューを書く..."></textarea>
+                <button type="submit" class="submit-review">レビューを送信</button>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+
+</html>
