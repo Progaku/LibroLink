@@ -1,0 +1,120 @@
+/* style.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.account-settings {
+  width: 80%;
+  max-width: 70%;
+  /* 最大幅を設定してコンテンツを中央に配置 */
+  margin: 20px auto;
+  /* 上下のマージンと自動左右のマージンで中央揃え */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* Flexboxを使用 */
+  flex-direction: column;
+  /* 子要素を縦に並べる */
+  align-items: center;
+  /* 子要素を中央揃えにする */
+}
+
+.profile-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  /* 画像の高さを指定して円形を保つ */
+  border-radius: 50%;
+  object-fit: cover;
+  /* 画像がコンテナに収まるように調整 */
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  /* 子要素を縦に並べる */
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.info-item {
+  border-top: 1px solid #999999;
+  display: flex;
+  align-items: center;
+  /* 中央揃え */
+  width: 100%;
+  /* 親コンテナの幅に合わせる */
+  margin-bottom: 10px;
+}
+.book-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item label {
+  flex-shrink: 0;
+  /* ラベルの幅が縮まないようにする */
+  width: 135px;
+  /* すべてのラベルの幅を固定する */
+  text-align: right;
+  /* ラベルのテキストを右寄せにする */
+  margin-right: 20px;
+  /* ラベルと値の間に余白を設ける */
+}
+
+.info-item p {
+  flex-shrink: 0;
+  /* ラベルの幅が縮まないようにする */
+  width: 150px;
+  /* すべてのラベルの幅を固定する */
+  text-align: right;
+  /* ラベルのテキストを右寄せにする */
+  margin-right: 20px;
+  /* ラベルと値の間に余白を設ける */
+}
+
+.info-item .info-value {
+  width: 200px;
+  /* ラベルと値の幅を200pxに固定 */
+}
+
+
+.info-value {
+  flex-grow: 1;
+  /* 値が利用可能なスペースを埋めるようにする */
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: left;
+  margin-top: 5px;
+  /* ラベルとの間に余白を設ける */
+}
+
+.actions button {
+  width: 100px;
+  background-color: #0084ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: black;
+  margin-top: 10px;
+}
