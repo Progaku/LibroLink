@@ -24,9 +24,10 @@ body {
   /* 子要素を中央揃えにする */
 }
 
-.profile-image {
-  text-align: center;
+.filter-sort {
+  text-align: right;
   margin-bottom: 20px;
+  /* width: 100%; */
 }
 
 .profile-image img {
@@ -36,6 +37,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   /* 画像がコンテナに収まるように調整 */
+  margin-top: 20px;
 }
 
 .book-info {
@@ -58,6 +60,7 @@ body {
 .book-detail {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 }
 
 .info-item label {
@@ -117,4 +120,5 @@ body {
 a {
   color: black;
   margin-top: 10px;
+  text-align: right;
 }
