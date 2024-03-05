@@ -6,7 +6,7 @@ body {
   background-color: #f4f4f4;
 }
 
-.book-list {
+.login-form {
   width: 80%;
   max-width: 70%;
   /* 最大幅を設定してコンテンツを中央に配置 */
@@ -24,23 +24,7 @@ body {
   /* 子要素を中央揃えにする */
 }
 
-.filter-sort {
-  text-align: right;
-  margin-bottom: 20px;
-  width: 50%;
-}
-
-.book-image img {
-  width: 100px;
-  height: 100px;
-  /* 画像の高さを指定して円形を保つ */
-  border-radius: 50%;
-  object-fit: cover;
-  /* 画像がコンテナに収まるように調整 */
-  margin-top: 20px;
-}
-
-.book-info {
+.login-info {
   display: flex;
   flex-direction: column;
   /* 子要素を縦に並べる */
@@ -48,33 +32,16 @@ body {
   width: 50%;
 }
 
-.info-item {
-  border-top: 1px solid #999999;
+.login-item {
   display: flex;
   align-items: center;
   /* 中央揃え */
-  width: 100%;
+  width: 70%;
   /* 親コンテナの幅に合わせる */
   margin-bottom: 10px;
 }
-.book-detail {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-}
 
-.info-item label {
-  flex-shrink: 0;
-  /* ラベルの幅が縮まないようにする */
-  width: 135px;
-  /* すべてのラベルの幅を固定する */
-  text-align: right;
-  /* ラベルのテキストを右寄せにする */
-  margin-right: 20px;
-  /* ラベルと値の間に余白を設ける */
-}
-
-.info-item p {
+.login-item label {
   flex-shrink: 0;
   /* ラベルの幅が縮まないようにする */
   width: 150px;
@@ -120,5 +87,4 @@ body {
 a {
   color: black;
   margin-top: 10px;
-  text-align: right;
 }
