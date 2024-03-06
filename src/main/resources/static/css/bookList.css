@@ -38,6 +38,7 @@ body {
   object-fit: cover;
   /* 画像がコンテナに収まるように調整 */
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .book-info {
@@ -119,6 +120,7 @@ body {
 
 a {
   color: black;
-  margin-top: 10px;
+  font-size: 13px;
+  margin-top: 20px;
   text-align: right;
 }
